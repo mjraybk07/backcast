@@ -6,3 +6,8 @@ node_modules/
 
 ## API keys ##
 src/config/youtube.js
+
+
+.floo
+.flooignore
+package-lock.json
