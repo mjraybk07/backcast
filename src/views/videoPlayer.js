@@ -1,5 +1,7 @@
 var VideoPlayerView = Backbone.View.extend({
 
+  el: '.player',
+
   initialize: function() {
     this.render();
   },
