@@ -1,6 +1,6 @@
 var VideoPlayerView = Backbone.View.extend({
 
-  el: '.player',
+  // el: '.player',
 
   handleSelect: function(video) {
     console.log('videoPlayerView handleSelect', video);
