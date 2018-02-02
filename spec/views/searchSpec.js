@@ -1,4 +1,4 @@
-describe ('SearchView', function() {
+xdescribe ('SearchView', function() {
   var view, collection;
 
   beforeEach(function() {

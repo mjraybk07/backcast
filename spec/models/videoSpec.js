@@ -1,4 +1,4 @@
-describe ('VideoModel', function() {
+xdescribe ('VideoModel', function() {
   var model;
 
   beforeEach(function() {
