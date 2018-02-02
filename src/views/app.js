@@ -4,7 +4,9 @@ var AppView = Backbone.View.extend({
 
   initialize: function(collection) {
     this.videos = new Videos( exampleVideoData);
-    //this.videos = new Videos(window.fakeVideoData);
+    this.videos.on('select', function () {
+      console.log('clicked');
+    })
     this.render();
   },
 
