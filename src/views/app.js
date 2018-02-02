@@ -2,12 +2,16 @@ var AppView = Backbone.View.extend({
 
   el: '#app',
 
-  initialize: function(collection) {
-    this.videos = new Videos( exampleVideoData);
-    this.videos.on('select', function () {
-      console.log('clicked');
-    })
+  initialize: function() {
+    this.videos = new Videos( exampleVideoData );
     this.render();
+
+    // this.videos.on('select', function () {
+    //   console.log('clicked');
+      
+    // }, this);
+    
+    this.listenTo(this.collection, 'update',  this.render());
   },
 
 
