@@ -1,17 +1,8 @@
 var VideoPlayerView = Backbone.View.extend({
 
-  // el: '.player',
-
-
   initialize: function() {
-    //this.render();
     this.listenTo(this.collection, 'select', this.handleSelect);
   },
-  
-  // initialize: function() {
-  //   this.render();
-  //   this.listenTo('select', this.render, this)
-  // },
 
   handleSelect: function(video) {
     console.log('videoPlayerView handleSelect', video);
@@ -19,11 +10,8 @@ var VideoPlayerView = Backbone.View.extend({
     this.render();
   },
   
-  render: function(selectedVideo) {
-    // // debugger;
-    selectedVideo = selectedVideo || this.collection.models[0];
-    // console.log('selected video: ', selectedVideo);
-    this.$el.html(this.template(selectedVideo.attributes));
+  render: function(selectedVideo) {;
+    this.$el.html(this.template(this.model.attributes));
     return this;
   },
 
